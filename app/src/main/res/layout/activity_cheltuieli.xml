@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheltuieliActivity">
+
+    <EditText
+        android:id="@+id/etCCumparaturi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCTransport" />
+
+    <TextView
+        android:id="@+id/tvCMedical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medical"
+        app:layout_constraintBottom_toTopOf="@+id/etCMedical"
+        app:layout_constraintStart_toStartOf="@+id/etCMedical" />
+
+    <EditText
+        android:id="@+id/etCMedical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCCumparaturi" />
+
+    <TextView
+        android:id="@+id/tvCCumparaturi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cumparaturi"
+        app:layout_constraintBottom_toTopOf="@+id/etCCumparaturi"
+        app:layout_constraintStart_toStartOf="@+id/etCCumparaturi" />
+
+    <EditText
+        android:id="@+id/etCAltele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCMedical" />
+
+    <TextView
+        android:id="@+id/tvCAltele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alte_cheltuieli"
+        app:layout_constraintBottom_toTopOf="@+id/etCAltele"
+        app:layout_constraintStart_toStartOf="@+id/etCAltele" />
+
+    <TextView
+        android:id="@+id/tvCalculatorCheltuieli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/cheltuieli"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCUtilitati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/utilitati"
+        app:layout_constraintBottom_toTopOf="@+id/etCUtilitati"
+        app:layout_constraintStart_toStartOf="@+id/etCUtilitati" />
+
+    <EditText
+        android:id="@+id/etCUtilitati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalculatorCheltuieli" />
+
+    <TextView
+        android:id="@+id/tvCAlimente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alimente"
+        app:layout_constraintBottom_toTopOf="@+id/etCAlimente"
+        app:layout_constraintStart_toStartOf="@+id/etCAlimente" />
+
+    <EditText
+        android:id="@+id/etCAlimente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCUtilitati" />
+
+    <TextView
+        android:id="@+id/tvCTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transport"
+        app:layout_constraintBottom_toTopOf="@+id/etCTransport"
+        app:layout_constraintStart_toStartOf="@+id/etCTransport" />
+
+    <EditText
+        android:id="@+id/etCTransport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCAlimente" />
+
+    <Button
+        android:id="@+id/btnCReseteaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="resetare"
+        android:text="@string/resetaza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCAltele" />
+
+    <Button
+        android:id="@+id/btnCMaiDeparte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="btnCalculator"
+        android:text="@string/mai_departe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCAltele" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

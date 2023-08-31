@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proiectpdmandroid">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProiectPDMAndroid">
+        <activity android:name=".SetariActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <receiver android:name=".widget.BugetAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/buget_app_widget_info" />
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".ListaBanciActivity" />
+        <activity
+            android:name=".IstoricActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ListaBanciActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RaportActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:parentActivityName=".CheltuieliActivity" />
+        <activity
+            android:name=".CheltuieliActivity"
+            android:parentActivityName=".VenituriActivity" />
+        <activity
+            android:name=".VenituriActivity"
+            android:parentActivityName=".LunaActivity" />
+        <activity
+            android:name=".LunaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".widget.WidgetAdapterService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            />
+        <service android:name=".service.NotifyService"/>
+
+        <service android:name=".ServiciuMediaPlayer"/>
+
+    </application>
+
+</manifest>

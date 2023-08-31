@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:padding="@dimen/widget_margin"
+    android:theme="@style/ThemeOverlay.ProiectPDMAndroid.AppWidgetContainer">
+
+    <ListView
+        android:id="@+id/appwidget_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/widget_history_item"
+        />
+</LinearLayout>

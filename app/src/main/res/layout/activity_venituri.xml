@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VenituriActivity">
+
+    <TextView
+        android:id="@+id/tvCalculatorVenituri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/venituri"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVSalariu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salariu"
+        app:layout_constraintBottom_toTopOf="@+id/etVSalariu"
+        app:layout_constraintStart_toStartOf="@+id/etVSalariu" />
+
+    <EditText
+        android:id="@+id/etVSalariu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalculatorVenituri" />
+
+    <TextView
+        android:id="@+id/tvVInvestitii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/investitii"
+        app:layout_constraintBottom_toTopOf="@+id/etVInvestitii"
+        app:layout_constraintStart_toStartOf="@+id/etVInvestitii" />
+
+    <EditText
+        android:id="@+id/etVInvestitii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVSalariu" />
+
+    <TextView
+        android:id="@+id/tvVAltele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alte_venituri"
+        app:layout_constraintBottom_toTopOf="@+id/etVAltele"
+        app:layout_constraintStart_toStartOf="@+id/etVAltele" />
+
+    <EditText
+        android:id="@+id/etVAltele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVInvestitii" />
+
+    <Button
+        android:id="@+id/btnVMaiDeparte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="btnCheltuieli"
+        android:text="@string/mai_departe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnVResetare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="resetare"
+        android:text="@string/resetaza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="4dp"
+    app:contentPadding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLunaCalcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/luna"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLunaInregistrare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/ianuarie"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/tvLunaCalcul"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/venituri"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLunaCalcul" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cheltuieli"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/tvLunaCalcul" />
+
+        <TextView
+            android:id="@+id/tvSalariu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/salariu_00000_lei"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvInvestitii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:text="@string/investitii_00000_lei"
+            app:layout_constraintStart_toStartOf="@+id/tvSalariu"
+            app:layout_constraintTop_toBottomOf="@+id/tvSalariu" />
+
+        <TextView
+            android:id="@+id/tvAlteleVenit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/altele_00000_lei"
+            app:layout_constraintStart_toStartOf="@+id/tvInvestitii"
+            app:layout_constraintTop_toBottomOf="@+id/tvInvestitii" />
+
+        <TextView
+            android:id="@+id/tvUtilitati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/utilitati_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/tvAlimente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/alimente_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/tvUtilitati"
+            app:layout_constraintStart_toStartOf="@+id/tvUtilitati"
+            app:layout_constraintTop_toBottomOf="@+id/tvUtilitati" />
+
+        <TextView
+            android:id="@+id/tvTransport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/transport_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/tvAlimente"
+            app:layout_constraintStart_toStartOf="@+id/tvAlimente"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlimente" />
+
+        <TextView
+            android:id="@+id/tvCumparaturi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cumparaturi_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/tvTransport"
+            app:layout_constraintStart_toStartOf="@+id/tvTransport"
+            app:layout_constraintTop_toBottomOf="@+id/tvTransport" />
+
+        <TextView
+            android:id="@+id/tvMedical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/medical_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/tvCumparaturi"
+            app:layout_constraintStart_toStartOf="@+id/tvCumparaturi"
+            app:layout_constraintTop_toBottomOf="@+id/tvCumparaturi" />
+
+        <TextView
+            android:id="@+id/tvAlteleCheltuieli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/altele_00000_lei"
+            app:layout_constraintEnd_toEndOf="@+id/tvMedical"
+            app:layout_constraintStart_toStartOf="@+id/tvMedical"
+            app:layout_constraintTop_toBottomOf="@+id/tvMedical" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/economii"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLunaCalcul" />
+
+        <TextView
+            android:id="@+id/tvTotalEconomii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total: 00000 lei"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/tvTotalVenit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total: 00000 lei"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvAlteleVenit"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlteleVenit" />
+
+        <TextView
+            android:id="@+id/tvTotalCheltuieli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total: 00000 lei"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvAlteleCheltuieli"
+            app:layout_constraintStart_toStartOf="@+id/tvAlteleCheltuieli"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlteleCheltuieli" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Proiect PDM Android</string>
+    <string name="bun_venit">Bun Venit</string>
+    <string name="calculator">Calculator</string>
+    <string name="raport">Raport</string>
+    <string name="locatie_banci">Locatie banci</string>
+    <string name="istoric">Istoric</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="calculator_venituri">Calculator Venituri</string>
+    <string name="salariu">Salariu</string>
+    <string name="investitii">Investitii</string>
+    <string name="alte_venituri">Alte venituri</string>
+    <string name="mai_departe">Mai Departe</string>
+    <string name="medical">Medical</string>
+    <string name="cumparaturi">Cumparaturi</string>
+    <string name="alte_cheltuieli">Alte Cheltuieli</string>
+    <string name="calculator_cheltuieli">Calculator Cheltuieli</string>
+    <string name="utilitati">Utilitati</string>
+    <string name="alimente">Alimente</string>
+    <string name="transport">Transport</string>
+    <string name="resetaza">Resetaza</string>
+    <string name="calculator_economii">Calculator Economii</string>
+    <string name="total_venituri">Total Venituri:</string>
+    <string name="valoareDefault">-</string>
+    <string name="total_cheltuieli">Total Cheltuieli:</string>
+    <string name="economii_total_venituri_total_cheltuieli">Economii = Total Venituri - Total Cheltuieli</string>
+    <string name="salveaza_in_bd">Salveaza in BD</string>
+    <string name="meniu_principal">Meniu Principal</string>
+    <string name="luna">Luna</string>
+    <string name="ianuarie">Ianuarie</string>
+    <string name="venituri">Venituri</string>
+    <string name="cheltuieli">Cheltuieli</string>
+    <string name="salariu_00000_lei">Salariu: 00000 lei</string>
+    <string name="investitii_00000_lei">Investitii: 00000 lei</string>
+    <string name="altele_00000_lei">Altele: 00000 lei</string>
+    <string name="utilitati_00000_lei">Utilitati: 00000 lei</string>
+    <string name="alimente_00000_lei">Alimente: 00000 lei</string>
+    <string name="transport_00000_lei">Transport: 00000 lei</string>
+    <string name="cumparaturi_00000_lei">Cumparaturi: 00000 lei</string>
+    <string name="medical_00000_lei">Medical: 00000 lei</string>
+    <string name="economii">Economii</string>
+
+    <string-array name="luni">
+        <item>Ianuarie</item>
+        <item>Februarie</item>
+        <item>Martie</item>
+        <item>Aprilie</item>
+        <item>Mai</item>
+        <item>Iunie</item>
+        <item>Iulie</item>
+        <item>August</item>
+        <item>Septembrie</item>
+        <item>Octombrie</item>
+        <item>Noiembrie</item>
+        <item>Decembrie</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+    <string name="alpha_bank">Alpha Bank</string>
+    <string name="sediu_alpha_bank">Calea Dorobanti, nr. 237B, sector 1, Bucuresti</string>
+    <string name="brd">BRD</string>
+    <string name="sediu_brd">Bd. Ion Mihalache 1-7, sector 1, Bucuresti</string>
+    <string name="bcr">BCR</string>
+    <string name="sediu_bcr">Calea Victoriei nr. 15, sector 3, București</string>
+    <string name="raiffeisen">Raiffeisen</string>
+    <string name="sediu_raiffeisen">Calea Floreasca, nr. 246C, cod postal 014476, Bucuresti</string>
+
+    <string name="locatie_m1">Bulevardul Ion Mihalache nr. 70</string>
+    <string name="locatie_m2">Calea Dorobanți nr.5</string>
+    <string name="locatie_m3">Strada Avrig nr. 63</string>
+    <string name="locatie_m4">Bulevardul Libertății 10</string>
+    <string name="locatie_m5">Bulevardul Corneliu Coposu nr.5-7</string>
+
+    <string name="locatie_m6">Bulevardul Bucureștii Noi 170</string>
+    <string name="locatie_m7">Calea Griviței 397</string>
+    <string name="locatie_m8">Șoseaua Colentina 25A</string>
+    <string name="locatie_m9">Piața C.A. Rosetti 3</string>
+    <string name="locatie_m10">Bulevardul Alexandru Obregia 2B</string>
+
+    <string name="locatie_m11">Bulevardul Bucureștii Noi 68</string>
+    <string name="locatie_m12">Strada Căpitan Alexandru Șerbănescu Nr.31</string>
+    <string name="locatie_m13">Bd. Gheorghe Duca 3-11</string>
+    <string name="locatie_m14">Calea Ferentari Bl.75A</string>
+    <string name="locatie_m15">Bulevardul Tineretului Nr.1</string>
+
+    <string name="locatie_m16">Calea Rahovei 327</string>
+    <string name="locatie_m17">Bulevardul Uverturii 83</string>
+    <string name="locatie_m18">Bloc R14, Bulevardul Alexandru Obregia 5-7</string>
+    <string name="locatie_m19">Bulevardul Decebal 16</string>
+    <string name="locatie_m20">Bulevardul Nicolae Bălcescu 23A</string>
+
+    <string name="eroare_locatie_curenta">Nu s-a putut identifica locatia curenta!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
